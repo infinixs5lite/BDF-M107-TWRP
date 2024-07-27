@@ -19,7 +19,7 @@
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
 
-FDEVICE='rova'
+FDEVICE='M107'
 
 if ! [ "$1" = "$FDEVICE" ]; then
     if ! [ "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
@@ -50,7 +50,7 @@ export LC_ALL='C'
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_REMOVE_AAPT='1'
 export FOX_LOCAL_CALLBACK_SCRIPT="$SCRIPT_DIR/localCallback.sh"
-export TARGET_DEVICE_ALT='rolex,riva'
+export TARGET_DEVICE_ALT='M107'
 export OF_NO_SPLASH_CHANGE=1
 export OF_USE_LZMA_COMPRESSION=1
 
@@ -66,7 +66,7 @@ export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR='1'
 
 # Settings for R11
 export FOX_VERSION='R11.1_6'
-export OF_MAINTAINER=iusmac
+export OF_MAINTAINER=nino
 export OF_USE_TWRP_SAR_DETECT='1'
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT='1'
 export OF_QUICK_BACKUP_LIST='/system_root;/vendor;/data;/persist;/boot;/super;/super_cust;'
