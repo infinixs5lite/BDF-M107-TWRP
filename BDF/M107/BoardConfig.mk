@@ -117,7 +117,6 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 DEVICE_RESOLUTION := 1280x800
 BOARD_HAS_FLIPPED_SCREEN := true
 
-
 # Show build time on the splash screen
 TW_DEVICE_VERSION=$(shell date '+%Y%m%d')
 
@@ -127,4 +126,12 @@ PLATFORM_SECURITY_PATCH := 2025-12-31
 # Platform version
 PLATFORM_VERSION := 16.1.0
 
-
+# Storage
+TW_HAS_MTP := true
+TW_MTP_DEVICE := /dev/mtp_usb
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_NO_USB_STORAGE := false
